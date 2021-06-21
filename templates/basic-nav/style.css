@@ -1,0 +1,28 @@
+*{ /*para matanggal ang default margin and padding sa html document*/
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    height: 80px;
+    background: rgb(119, 167, 238);
+    box-shadow: 0 4px 2px -2px gray;
+}
+nav{
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+    line-height: 80px;
+    padding: 10px 20px;     
+}
+a:hover{
+    background: rgb(91, 151, 240);
+}
+.active{
+    border-bottom: 5px solid rgb(12, 54, 241);
+}

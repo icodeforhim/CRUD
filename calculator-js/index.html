@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calculator-js.css" rel="stylesheet">
+    <script src="calculator-js.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="display">
+            <label id="title">Basic Calculator JS</label>
+            <form name="form">
+            <input type="textbox" id="output1" placeholder="0">
+            <input type="textbox" id="output2" placeholder="0">
+            
+        </div>
+
+        <script>
+            document.getElementById('output1').addEventListener('focus', function () {
+                document.getElementById('output1').blur();
+            });
+            document.getElementById('output1').style.cursor = 'default';
+
+            document.getElementById('output2').addEventListener('focus', function () {
+                document.getElementById('output2').blur();
+            });
+            document.getElementById('output2').style.cursor = 'default';
+        </script>
+
+        <table class="keys">
+            <tr>
+                <td id="ca"><button onclick="clear()">C/A</button></td>    
+            </form>
+                <td id="del"><button onclick="del()">DEL</button></td>
+                <td><button onclick=""></button></td>
+                <td><button onclick="insert('*'); op()">*</button></td>
+            </tr>
+     
+            <tr>
+                <td><button onclick="insert(7)">7</button></td>
+                <td><button onclick="insert(8)">8</button></td>
+                <td><button onclick="insert(9)">9</button></td>
+                <td><button onclick="insert('/'); op()">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(4)">4</button></td>
+                <td><button onclick="insert(5)">5</button></td>
+                <td><button onclick="insert(6)">6</button></td>
+                <td><button onclick="insert('-'); op()">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(1)">1</button></td>
+                <td><button onclick="insert(2)">2</button></td>
+                <td><button onclick="insert(3)">3</button></td>
+                <td><button onclick="insert('+'); op()">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="zero"><button onclick="insert(0)">0</button></td>
+                <td><button onclick="insertdot()">.</button></td>
+                <td><button onclick="">=</button></td>
+            </tr>
+    </div>
+
+</body>
+
+</html>

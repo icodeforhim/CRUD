@@ -1,0 +1,53 @@
+body {
+  background: #191d24;
+}
+#title{
+  color: white;
+  font-family: arial;
+  margin-left: 3px;
+}
+.container {
+  background: #202c42;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  width: 220px;
+  padding: 5px;
+}
+.display #output1, 
+.display #output2{
+  text-align: right;
+  margin-left: 3px;
+  padding: 5px;
+  width: 203px;
+  height: 20px;
+  border: none;
+  outline:none;
+  cursor: default;
+}
+.display #output1{
+  font-size:10px;
+}
+.display #output2{
+  font-size:20px;
+  margin-top: -2px;
+}
+table td {
+  border: none;
+}
+button {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3c414a;
+}
+#zero button {
+  width: 105px;
+}
+#ca button,
+#del button {
+  font-size: 15px;
+}
